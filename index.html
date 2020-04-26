@@ -5,7 +5,10 @@
     <title>Reqwest Pages</title>
 </head>
 <body>
-<h1>Hello :)</h1>
+<main>
+    <h1>Hello :)</h1>
+</main>
+
 <script type="javascript">
     let params = new URLSearchParams(document.location.search);
     let q = parseInt(params.get("code"));
@@ -13,7 +16,7 @@
     code.type = 'hidden'
     code.name = 'code'
     code.innerText = q
-    document.body.appendChild(code)
+    document.getElementsByTagName('main').appendChild(code)
 </script>
 
 
