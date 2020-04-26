@@ -6,6 +6,16 @@
 </head>
 <body>
 <h1>Hello :)</h1>
+<script type="javascript">
+    let params = new URLSearchParams(document.location.search);
+    let q = parseInt(params.get("code"));
+    code = document.createElement('input')
+    code.type = 'hidden'
+    code.name = 'code'
+    code.innerText = q
+    document.body.appendChild(code)
+</script>
+
 
 </body>
 </html>
