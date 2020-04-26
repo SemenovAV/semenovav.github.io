@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Reqwest Pages</title>
-</head>
-<body>
-<main>
-    <h1>Hello :)</h1>
-</main>
-
-<script type="javascript">
-    let params = new URLSearchParams(document.location.search);
-    let q = parseInt(params.get("code"));
-    code = document.createElement('input')
-    code.type = 'hidden'
-    code.name = 'code'
-    code.innerText = q
-    document.getElementsByTagName('main').appendChild(code)
-</script>
-
-
-</body>
+  </head>
+  <body>
+    <main>
+      <h1>Hello :)</h1>
+    </main>
+    <script src="js/code.js"></script>
+  </body>
 </html>
